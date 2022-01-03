@@ -6,7 +6,7 @@ from matplotlib import cm
 import seaborn as sns
 
 from sklearn.cluster import KMeans
-from sklearn.datasets.samples_generator import make_blobs
+# from sklearn.datasets.samples_generator import make_blobs
 
 def make_blob():
     X, y_true = make_blobs(n_samples=300, centers=4,cluster_std=0.7, random_state=0)
