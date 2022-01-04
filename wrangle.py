@@ -150,9 +150,9 @@ def wrangle_mall_df():
     mall_df = pd.concat([mall_df, dummy_df], axis=1).drop(columns = ['gender'])
     mall_df.rename(columns= {'Male': 'is_male'}, inplace = True)
     # return mall_df
-
+    return mall_df
     # split the data in train, validate and test
-    train, test = train_test_split(mall_df, train_size = 0.8, random_state = 123)
-    train, validate = train_test_split(train, train_size = 0.75, random_state = 123)
+    # train, test = train_test_split(mall_df, train_size = 0.8, random_state = 123)
+    # train, validate = train_test_split(train, train_size = 0.75, random_state = 123)
     
-    return min_max_scaler, train, validate, test
+    # return min_max_scaler, train, validate, test
